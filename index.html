@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      /* table {
+  align-self: flex-start;
+} */
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      td,
+      th {
+        padding: 0.25rem;
+        text-align: center;
+      }
+      th {
+        color: antiquewhite;
+        background-color: #637c9d;
+        text-align: center;
+      }
+
+      td {
+        background-color: #eef2ff;
+      }
+
+      caption {
+        padding: 0.5rem;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="../dist/output.css" /> -->
+    <style>
+      /*! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com*/
+      *,
+      :after,
+      :before {
+        box-sizing: border-box;
+        border: 0 solid #e5e7eb;
+      }
+      :after,
+      :before {
+        --tw-content: "";
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        -moz-tab-size: 4;
+        -o-tab-size: 4;
+        tab-size: 4;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        font-feature-settings: normal;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      hr {
+        height: 0;
+        color: inherit;
+        border-top-width: 1px;
+      }
+      abbr:where([title]) {
+        -webkit-text-decoration: underline dotted;
+        text-decoration: underline dotted;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      code,
+      kbd,
+      pre,
+      samp {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          Liberation Mono, Courier New, monospace;
+        font-size: 1em;
+      }
+      small {
+        font-size: 80%;
+      }
+      sub,
+      sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: initial;
+      }
+      sub {
+        bottom: -0.25em;
+      }
+      sup {
+        top: -0.5em;
+      }
+      table {
+        text-indent: 0;
+        border-color: inherit;
+        border-collapse: collapse;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      [type="button"],
+      [type="reset"],
+      [type="submit"],
+      button {
+        -webkit-appearance: button;
+        background-color: initial;
+        background-image: none;
+      }
+      :-moz-focusring {
+        outline: auto;
+      }
+      :-moz-ui-invalid {
+        box-shadow: none;
+      }
+      progress {
+        vertical-align: initial;
+      }
+      ::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        height: auto;
+      }
+      [type="search"] {
+        -webkit-appearance: textfield;
+        outline-offset: -2px;
+      }
+      ::-webkit-search-decoration {
+        -webkit-appearance: none;
+      }
+      ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+      }
+      summary {
+        display: list-item;
+      }
+      blockquote,
+      dd,
+      dl,
+      figure,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      hr,
+      p,
+      pre {
+        margin: 0;
+      }
+      fieldset {
+        margin: 0;
+      }
+      fieldset,
+      legend {
+        padding: 0;
+      }
+      menu,
+      ol,
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      textarea {
+        resize: vertical;
+      }
+      input::-moz-placeholder,
+      textarea::-moz-placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        opacity: 1;
+        color: #9ca3af;
+      }
+      [role="button"],
+      button {
+        cursor: pointer;
+      }
+      :disabled {
+        cursor: default;
+      }
+      audio,
+      canvas,
+      embed,
+      iframe,
+      img,
+      object,
+      svg,
+      video {
+        display: block;
+        vertical-align: middle;
+      }
+      img,
+      video {
+        max-width: 100%;
+        height: auto;
+      }
+      [hidden] {
+        display: none;
+      }
+      *,
+      ::backdrop,
+      :after,
+      :before {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #3b82f680;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+      }
+      .m-2 {
+        margin: 0.5rem;
+      }
+      .m-3 {
+        margin: 0.75rem;
+      }
+      .m-4 {
+        margin: 1rem;
+      }
+      .mx-4 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .my-3 {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
+      .my-5 {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+      }
+      .mb-2 {
+        margin-bottom: 0.5rem;
+      }
+      .ml-1 {
+        margin-left: 0.25rem;
+      }
+      .ml-6 {
+        margin-left: 1.5rem;
+      }
+      .mt-0 {
+        margin-top: 0;
+      }
+      .flex {
+        display: flex;
+      }
+      .table {
+        display: table;
+      }
+      .h-2 {
+        height: 0.5rem;
+      }
+      .h-fit {
+        height: -moz-fit-content;
+        height: fit-content;
+      }
+      .w-full {
+        width: 100%;
+      }
+      .flex-grow {
+        flex-grow: 1;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+      .flex-nowrap {
+        flex-wrap: nowrap;
+      }
+      .items-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .justify-evenly {
+        justify-content: space-evenly;
+      }
+      .gap-3 {
+        gap: 0.75rem;
+      }
+      .gap-5 {
+        gap: 1.25rem;
+      }
+      .gap-6 {
+        gap: 1.5rem;
+      }
+      .gap-9 {
+        gap: 2.25rem;
+      }
+      .gap-y-3 {
+        row-gap: 0.75rem;
+      }
+      .gap-y-5 {
+        row-gap: 1.25rem;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem;
+      }
+      .rounded-md {
+        border-radius: 0.375rem;
+      }
+      .rounded-xl {
+        border-radius: 0.75rem;
+      }
+      .border-2 {
+        border-width: 2px;
+      }
+      .border-4 {
+        border-width: 4px;
+      }
+      .border-blue-400 {
+        --tw-border-opacity: 1;
+        border-color: rgb(96 165 250 / var(--tw-border-opacity));
+      }
+      .border-blue-500 {
+        --tw-border-opacity: 1;
+        border-color: rgb(59 130 246 / var(--tw-border-opacity));
+      }
+      .border-gray-200 {
+        --tw-border-opacity: 1;
+        border-color: rgb(229 231 235 / var(--tw-border-opacity));
+      }
+      .bg-blue-400 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+      }
+      .bg-gray-100 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+      }
+      .bg-gray-300 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+      }
+      .bg-gray-50 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+      }
+      .bg-slate-500 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+      }
+      .bg-slate-900 {
+        --tw-bg-opacity: 1;
+        background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+      }
+      .bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      }
+      .bg-opacity-30 {
+        --tw-bg-opacity: 0.3;
+      }
+      .bg-opacity-50 {
+        --tw-bg-opacity: 0.5;
+      }
+      .p-2 {
+        padding: 0.5rem;
+      }
+      .p-3 {
+        padding: 0.75rem;
+      }
+      .p-4 {
+        padding: 1rem;
+      }
+      .p-7 {
+        padding: 1.75rem;
+      }
+      .p-8 {
+        padding: 2rem;
+      }
+      .px-10 {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+      }
+      .px-2 {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .px-4 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .font-mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          Liberation Mono, Courier New, monospace;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+      }
+      .font-bold {
+        font-weight: 700;
+      }
+      .font-medium {
+        font-weight: 500;
+      }
+      .font-semibold {
+        font-weight: 600;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .text-gray-100 {
+        --tw-text-opacity: 1;
+        color: rgb(243 244 246 / var(--tw-text-opacity));
+      }
+      .text-slate-500 {
+        --tw-text-opacity: 1;
+        color: rgb(100 116 139 / var(--tw-text-opacity));
+      }
+      .text-white {
+        --tw-text-opacity: 1;
+        color: rgb(255 255 255 / var(--tw-text-opacity));
+      }
+      .underline {
+        text-decoration-line: underline;
+      }
+      .drop-shadow-lg {
+        --tw-drop-shadow: drop-shadow(0 10px 8px #0000000a)
+          drop-shadow(0 4px 3px #0000001a);
+        filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+          var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+          var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+      }
+      .hover\:bg-indigo-50:hover {
+        --tw-bg-opacity: 1;
+        background-color: rgb(238 242 255 / var(--tw-bg-opacity));
+      }
+      .hover\:text-indigo-900:hover {
+        --tw-text-opacity: 1;
+        color: rgb(49 46 129 / var(--tw-text-opacity));
+      }
+      @media (min-width: 768px) {
+        .md\:w-1\/2 {
+          width: 50%;
+        }
+        .md\:w-4\/5 {
+          width: 80%;
+        }
+        .md\:flex-grow-0 {
+          flex-grow: 0;
+        }
+      }
+    </style>
+    <title>WEG homework</title>
+  </head>
+  <body class="bg-gray-300 p-3">
+    <header
+      class="w-full md:w-1/2 flex border-2 mx-auto border-blue-400 rounded-xl p-4 bg-white flex-nowrap items-center flex-col gap-y-3"
+    >
+      <h1 class="text-2xl font-medium">Report for company</h1>
+      <h6>data over the last year as request in the assignment</h6>
+      <div class="flex gap-6 font-mono">
+        <h2>Ali Alkhateeb <span class="italic">(ali_242361)</span></h2>
+        <h2>George Abbdouch <span class="italic">(george_237618)</span></h2>
+      </div>
+
+      <h2 class="flex items-center">
+        <span
+          class="text-md mx-4 drop-shadow-lg bg-slate-500 px-2 text-white rounded-lg"
+          ><span class="font-semibold"> F22: </span> MWS-WDA
+        </span>
+
+        <p>Access notebook via this link: &ThickSpace;</p>
+        <a
+          class="font-medium underline hover:text-indigo-900 hover:bg-indigo-50"
+          href="https://colab.research.google.com/drive/1eliaJD2jeU7-hCyEwdgtKZWifv-O8GMc?usp=sharinghttps://colab.research.google.com/drive/1eliaJD2jeU7-hCyEwdgtKZWifv-O8GMc?usp=sharing"
+          >Colab Jupyter Notebook</a
+        >
+      </h2>
+      <h6 class="italic">
+        please read the
+        <a
+          class="underline hover:text-indigo-900 hover:bg-indigo-50"
+          href="README.txt"
+          >README.txt</a
+        >
+        file attached in assignment folder
+      </h6>
+    </header>
+    <main>
+      <div
+        class="flex flex-col w-full flex-wrap gap-y-5 p-2 my-5 bg-gray-50 bg-opacity-30"
+        id="Metrics-report-per-product "
+      >
+        <h3 class="font-bold text-2xl m-4">Metrics per Product Line</h3>
+        <div class="flex gap-3 flex-wrap items-center justify-evenly">
+          <div class="p-4 bg-white drop-shadow-lg rounded-md">
+            <table id="Revenue by Product Line">
+              <caption>
+                Revenue by Product Line
+              </caption>
+              <tr>
+                <th>Product Line</th>
+                <th>Revenue</th>
+              </tr>
+              <tr>
+                <td>Classic Cars</td>
+                <td>527652</td>
+              </tr>
+              <tr>
+                <td>Motorcycles</td>
+                <td>192486</td>
+              </tr>
+              <tr>
+                <td>Planes</td>
+                <td>175849</td>
+              </tr>
+              <tr>
+                <td>Ships</td>
+                <td>119195</td>
+              </tr>
+              <tr>
+                <td>Trains</td>
+                <td>30691</td>
+              </tr>
+              <tr>
+                <td>Trucks and Buses</td>
+                <td>146772</td>
+              </tr>
+              <tr>
+                <td>Vintage Cars</td>
+                <td>286391</td>
+              </tr>
+            </table>
+          </div>
+          <div class="p-4 bg-white drop-shadow-lg rounded-md">
+            <table id="Units Sold by Product Line">
+              <caption>
+                Units Sold by Product Line
+              </caption>
+              <tr>
+                <th>Product Line</th>
+                <th>Units Sold</th>
+              </tr>
+              <tr>
+                <td>Classic Cars</td>
+                <td>6101</td>
+              </tr>
+              <tr>
+                <td>Motorcycles</td>
+                <td>2234</td>
+              </tr>
+              <tr>
+                <td>Planes</td>
+                <td>2207</td>
+              </tr>
+              <tr>
+                <td>Ships</td>
+                <td>1346</td>
+              </tr>
+              <tr>
+                <td>Trains</td>
+                <td>409</td>
+              </tr>
+              <tr>
+                <td>Trucks and Buses</td>
+                <td>1719</td>
+              </tr>
+              <tr>
+                <td>Vintage Cars</td>
+                <td>3615</td>
+              </tr>
+            </table>
+          </div>
+          <div class="p-4 bg-white drop-shadow-lg rounded-md">
+            <table id="Average Price by Product Line">
+              <caption>
+                Average Price by Product Line
+              </caption>
+              <tr>
+                <th>Product Line</th>
+                <th>Average Price</th>
+              </tr>
+              <tr>
+                <td>Classic Cars</td>
+                <td>86</td>
+              </tr>
+              <tr>
+                <td>Motorcycles</td>
+                <td>86</td>
+              </tr>
+              <tr>
+                <td>Planes</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Ships</td>
+                <td>89</td>
+              </tr>
+              <tr>
+                <td>Trains</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Trucks and Buses</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>Vintage Cars</td>
+                <td>79</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="p-4 bg-white drop-shadow-lg rounded-md">
+            <table id="Number of Orders by Product Line">
+              <caption>
+                Number of Orders by Product Line
+              </caption>
+              <tr>
+                <th>Product Line</th>
+                <th>No. Orders</th>
+              </tr>
+              <tr>
+                <td>Classic Cars</td>
+                <td>159</td>
+              </tr>
+              <tr>
+                <td>Motorcycles</td>
+                <td>58</td>
+              </tr>
+              <tr>
+                <td>Planes</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>Ships</td>
+                <td>38</td>
+              </tr>
+              <tr>
+                <td>Trains</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Trucks and Buses</td>
+                <td>49</td>
+              </tr>
+              <tr>
+                <td>Vintage Cars</td>
+                <td>102</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <article>
+          <div
+            class="flex w-full gap-6 p-7 flex-wrap items-center justify-center"
+          >
+            <!-- table -->
+            <div class="p-4 bg-white drop-shadow-lg rounded-md">
+              <table id="ranking">
+                <caption>
+                  Ranking
+                </caption>
+                <tr>
+                  <th>PRODUCTLINE</th>
+                  <th>Revenue</th>
+                  <th>Units Sold</th>
+                  <th>Price (Avg)</th>
+                  <th>Number of Orders</th>
+                </tr>
+                <tr>
+                  <td>Classic Cars</td>
+                  <td>7</td>
+                  <td>7</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Motorcycles</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Planes</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Ships</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Trains</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Trucks and Buses</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Vintage Cars</td>
+                  <td>6</td>
+                  <td>6</td>
+                  <td>2</td>
+                  <td>6</td>
+                </tr>
+              </table>
+            </div>
+            <!-- image -->
+            <div
+              class="p-4 bg-white drop-shadow-lg rounded-md flex-grow justify-center items-center flex"
+            >
+              <figure>
+                <img
+                  width="600px"
+                  id="ranking visualization"
+                  src="media/RankReport.png"
+                  alt="ranking report grouped bars visualization"
+                />
+                <figcaption class="text-center m-2">
+                  Ranking for each product line
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <article>
+            <h3 class="text-2xl ml-6 font-medium">Report:</h3>
+            <article
+              id="summary"
+              class="bg-white drop-shadow-lg border-blue-500 border-4 p-3 w-full h-fit m-3 rounded-lg mx-auto"
+            >
+              <h4 class="font-semibold mb-2 ml-1 text-xl">Summary</h4>
+              <p class="m-3">
+                We present a list of information & recommendations based on the
+                previous ranking:
+              </p>
+              <ul class="px-4">
+                <li style="list-style: circle">
+                  Clasic cars bring in the most revenue, with Vintage cars
+                  coming second.
+                </li>
+                <li style="list-style: circle">
+                  There is a huge potential for generating more revenue from the
+                  Vintage Cars product line. read below for more details.
+                </li>
+                <li style="list-style: circle">
+                  Investigate the poor performance in the trains product line
+                  and consider selling this division if no future projects are
+                  guaranteed. Otherwise, trains can cause major losses in the
+                  future.
+                </li>
+
+                <li style="list-style: circle">
+                  Ships & Planes prices must be re-evaluated: <br />
+                  There's more potential Revenue in increasing Planes prices as
+                  the demand is quite high but for ships the company should
+                  investiage new approaches to lower their prices.
+                </li>
+              </ul>
+            </article>
+            <div class="flex flex-col flex-wrap w-full p-3">
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="classic cars"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Classic Cars</h4>
+                <p class="m-3">
+                  To maintain or boost performance for Classic Cars, the company
+                  could consider expanding its product line to include limited
+                  edition releases. Additionally, the company could explore
+                  partnerships or collaborations with other brands to increase
+                  visibility and reach new customers.
+                </p>
+              </article>
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="motor cycles"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Motorcycles</h4>
+                <p class="m-3">
+                  To maintain or boost performance for Motorcycles, the company
+                  could consider offering customization options or accessories
+                  to allow customers to personalize their purchases.
+                  Additionally, the company could explore targeted marketing
+                  campaigns to reach new customer segments. <br />
+                  Also, the company should offer discounts occasional or
+                  decrease the price if possible.
+                </p>
+              </article>
+
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="Planes"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Planes</h4>
+                <p class="m-3">
+                  Thanks to the high number of orders, We believe that the
+                  company should consider a price increase for planes category
+                  as this will generate more revenue. Noticing that the order
+                  pool is big enough, the company might consider sponsored
+                  products or collaborations with international airlines and
+                  official governmental agencies.
+                </p>
+              </article>
+
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="ships"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Ships</h4>
+                <p class="m-3">
+                  With relatively low revenue and total sales while having
+                  prices in the upper tiers, We recommend a total renovation for
+                  ships production as this category poses a future finacial loss
+                  for the company. Either move out of the Ships industry (via
+                  selling) or investigate heavliy in market awarness campaigns
+                  alognside contracting legetimate foreign entities.
+                </p>
+              </article>
+
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="trains"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Trains</h4>
+                <p class="m-3">
+                  Due to their nature, trains might not have potential big sales
+                  pools but this does not mean the company cannot make more
+                  money on them. We suggest a investigating a new sales model
+                  for trains and scanning the market for potential spots,
+                  especially in rapid-growth countries. Also, we believe that
+                  modern trains with state-of-the-art technologies (electric
+                  trains for example) would increase the company's total profit
+                  and sales number.
+                </p>
+              </article>
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="trucks and buses"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Trucks & Buses</h4>
+                <p class="m-3">
+                  Being around the median entries, we heavily suggest that the
+                  company shuold consider investing in high-tech Trucks and
+                  buses. With automation on the rise, we suggest selling
+                  AI-enabled trucks and buses with built-in devices for tracking
+                  and state managemen. This will positively impact total sales
+                  especially for bulk purchases (like from governmental
+                  entities) which in turn would increase revenue whil
+                  maintaining same prices thanks to cheaper solutions offered by
+                  modern technologies.
+                </p>
+              </article>
+              <article
+                class="bg-white drop-shadow-lg md:w-4/5 mx-auto p-3 h-fit m-3 rounded-lg"
+                id="vintage cars"
+              >
+                <h4 class="font-semibold mb-2 ml-1 text-xl">Vintage Cars</h4>
+                <p class="m-3">
+                  Since Vitnage cars have relatively large sales compared with
+                  prices, the company might consider a new pricing model like
+                  subscription models that are known to bring more revenue with
+                  sales of high volume and low prices. And thanks to the time
+                  prefernce of vintage cars, the company can host special events
+                  for rare cars that can be sold with exxtremely high prices
+                  occasionally.
+                </p>
+              </article>
+            </div>
+          </article>
+        </article>
+      </div>
+      <div
+        id="first seperator"
+        class="w-full px-4 my-3 bg-opacity-50 h-2 rounded-xl bg-blue-400"
+      ></div>
+      <div
+        class="flex flex-col w-full flex-wrap gap-y-5 p-2 my-5 bg-gray-50 bg-opacity-30"
+        id="Metrics-report-per-month"
+      >
+        <h3 class="font-bold text-2xl m-4">Metrics for Last Year Months</h3>
+
+        <div class="flex gap-9 flex-wrap px-10">
+          <div class="flex gap-5 flex-wrap w-full justify-center">
+            <div class="p-4 bg-white drop-shadow-lg rounded-md">
+              <table id="Total Revenue Generated per Month">
+                <caption>
+                  Total Revenue Generated per Month
+                </caption>
+                <tr>
+                  <th>Month</th>
+                  <th>Total Revenue</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>283680</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>289902</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>315132</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>217978</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>372344</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="p-4 bg-white drop-shadow-lg rounded-md flex-grow md:w-1/2 md:flex-grow-0 justify-center items-center flex"
+            >
+              <figure>
+                <img
+                  width="400px"
+                  src="media/revenueOverTime.png"
+                  alt="a line chart visualization for revenue over time"
+                />
+                <figcaption></figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="flex gap-5 flex-wrap w-full justify-center">
+            <div class="p-4 bg-white drop-shadow-lg rounded-md">
+              <table id="Total Units Sold by Month">
+                <caption>
+                  Total Units Sold by Month
+                </caption>
+                <tr>
+                  <th>Month</th>
+                  <th>Total Units Sold</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>3395</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>3393</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>3852</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2634</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>4357</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="p-4 bg-white drop-shadow-lg rounded-md flex-grow md:w-1/2 md:flex-grow-0 justify-center items-center flex"
+            >
+              <figure>
+                <img
+                  width="400px"
+                  src="media/UnitsSoldOverTime.png"
+                  alt="a line chart visualization for units sales over time"
+                />
+              </figure>
+              <figcaption></figcaption>
+            </div>
+          </div>
+
+          <div class="flex gap-5 flex-wrap w-full justify-center">
+            <div class="p-4 bg-white drop-shadow-lg rounded-md">
+              <table id="Average Unit Price per Month ">
+                <caption>
+                  Average Unit Price per Month
+                </caption>
+                <tr>
+                  <th>Product Line</th>
+                  <th>Average Unit Price per Month</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>84</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>85</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>82</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>83</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>85</td>
+                </tr>
+              </table>
+            </div>
+
+            <div
+              class="p-4 bg-white drop-shadow-lg rounded-md flex-grow md:w-1/2 md:flex-grow-0 justify-center items-center flex"
+            >
+              <figure>
+                <img
+                  width="400px"
+                  src="media/AveragePriceOverTime.png"
+                  alt="a line chart visualization for average prices over time"
+                />
+              </figure>
+
+              <figcaption></figcaption>
+            </div>
+          </div>
+
+          <article
+            class="bg-white drop-shadow-lg border-4 p-3 w-full h-fit m-3 rounded-lg mx-auto"
+          >
+            <p class="font-medium m-2 mt-0">Findings:</p>
+            <p class="mx-4">
+              In the first 2 months we can that the company made little profit
+              thanks stable sales even though the price was increased. Also, the
+              sharp decline of price between month 2(February) and month
+              3(March) resulted in a stronger positive trend towards more sales
+              with tangible revenue generated. <br />
+              <br />
+              However, Between month 3(March) and month 5(May) we can clearly
+              identify a V-shape rebound for sales and revenue to higher levels
+              than before; but we cannot say the same for prices. In fact, from
+              month 3(March) onwards, the prices kept increasing with
+              accelerated increase from month 4(April). This indicates that the
+              company's strategy for extremely lowering the price to freshen up
+              their sales is a working strategy that yields more revenue in the
+              long run.
+              <br />
+              <br />
+              <span class="font-bold"> We suggest</span> that the company
+              follows the same trend but with longer periods. For example, they
+              might apply the same strategy over periods ranging between 3 to 6
+              months. This way, the company will be to generate more profit and
+              keep their gross sale movement active whil not harming the price
+              on the initial price drop.
+              <br />
+              <br />
+            </p>
+          </article>
+        </div>
+      </div>
+      <div
+        id="second seperator"
+        class="w-full px-4 my-3 bg-opacity-50 h-2 rounded-xl bg-blue-400"
+      ></div>
+      <div
+        class="flex flex-col w-full flex-wrap gap-y-5 p-8 my-5 bg-gray-50 bg-opacity-30"
+        id="Top-5-Cities-sales"
+      >
+        <h3 class="font-bold text-2xl">Top 5 Cities Sales</h3>
+        <div class="flex gap-9 flex-wrap px-10 justify-center">
+          <div class="p-4 bg-white drop-shadow-lg rounded-md">
+            <table id="Top 5 Cities in Sales">
+              <caption>
+                Top 5 Cities in Sales
+              </caption>
+              <tr>
+                <th>City</th>
+                <th>Sales</th>
+              </tr>
+              <tr>
+                <td>Madrid</td>
+                <td>266457</td>
+              </tr>
+              <tr>
+                <td>San Rafael</td>
+                <td>173160</td>
+              </tr>
+              <tr>
+                <td>Nantes</td>
+                <td>84116</td>
+              </tr>
+              <tr>
+                <td>San Jose</td>
+                <td>77690</td>
+              </tr>
+              <tr>
+                <td>Reims</td>
+                <td>48729</td>
+              </tr>
+            </table>
+          </div>
+          <div
+            class="p-4 bg-white drop-shadow-lg rounded-md flex-grow justify-center items-center flex"
+          >
+            <figure>
+              <img
+                width="400px"
+                src="media/top5SalesCitiespng.png"
+                alt="a pie chart visualization for sales performance of top 5 cities"
+              />
+              <figcaption></figcaption>
+            </figure>
+          </div>
+        </div>
+        <article class="bg-white drop-shadow-lg w-full h-fit p-3 rounded-lg">
+          <h4 class="font-semibold mb-2 ml-1 text-xl">Recommendations</h4>
+          <p class="m-3">
+            To generate more revenue from top 5 selling cities, the company
+            shoudl consider several strategies:<br />
+            <br />
+            One approach is to
+            <span class="font-medium"> charge more </span> for products or
+            services. Another approach is to increase the number of transactions
+            by using various approaches such as
+            <span class="font-medium"
+              >offering discounts and special promotions</span
+            >
+            . The company can also improve collections by using technology to
+            <span class="font-medium">
+              automate billing and payment processes</span
+            >. Additionally, the company
+            <span class="font-medium"> can create new revenue streams </span> by
+            adding complementary services or products to your current line of
+            products. <br />
+            <br />
+            By implementing these strategies, the company can increase revenues
+            and business growth.
+          </p>
+        </article>
+      </div>
+    </main>
+    <footer
+      class="flex flex-nowrap w-ful p-4 bg-slate-900 text-gray-100 rounded-lg"
+    >
+      <p class="font-medium mx-auto">
+        <span
+          class="text-2xl mx-4 border-2 text-slate-500 px-2 bg-gray-100 border-gray-200 rounded-lg"
+          >F22</span
+        >
+        Masters in Webscience- Web Data Analysis assignment
+      </p>
+    </footer>
+  </body>
+</html>
